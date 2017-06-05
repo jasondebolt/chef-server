@@ -23,8 +23,8 @@
 	path = cookbooks/chef-lamp
 	url = https://github.com/jasondebolt/chef-lamp
 [submodule "roles"]
-	path = cookbooks/roles
+	path = roles
 	url = https://github.com/jasondebolt/chef-roles
 [submodule "data_bags"]
-	path = cookbooks/data_bags
+	path = data_bags
 	url = https://github.com/jasondebolt/chef-data-bags
