@@ -1,0 +1,16 @@
+This server is the property of <%= @name %>
+
+HOSTNAME: <%= node['hostname'] %>
+MACHINE_NAME: <%= node['machinename'] %>
+FQDN: <%= node['fqdn'] %>
+DOMAIN: <%= node['domain'] %>
+PLATFORM: <%= node['platform'] %>
+PLATFORM_VERSION: <%= node['platform_version'] %>
+PLATFORM_FAMILY: <%= node['platform_family'] %>
+OS: <%= node['os'] %>
+OS_VERSION: <%= node['os_version'] %>
+IPADDRESS: <%= node['ipaddress'] %>
+CPU: <%= node['cpu']['0']['mhz'] %>
+MEMORY: <%= node['memory']['total'] %>
+RSA_PUB_KEY: <%= node['keys']['ssh']['host_rsa_public'] %>
+SHELLS: <%= node['shells'] %>

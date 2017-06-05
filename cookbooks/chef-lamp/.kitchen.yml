@@ -1,0 +1,35 @@
+---
+driver:
+  name: ec2
+  aws_ssh_key_id: JasonOregonKeyPair
+  region: us-west-2
+  availability_zone: us-west-2c
+  require_chef_omnibus: true
+  security_group_ids: sg-016f977a
+  subnet_id: subnet-c1a95299
+  associate_public_ip: true
+  interface: dns
+  retryable_tries: 120
+  instance_type: t2.micro
+
+provisioner:
+  name: chef_zero
+always_update_cookbooks: true
+
+verifier:
+  name: inspec
+
+platforms:
+  - name: ubuntu-14.04
+    transport:
+      ssh_key: ~/keys/JasonOregonKeyPair.pem
+
+suites:
+  - name: default
+    data_bags_path: test/fixtures/default/data_bags
+    run_list:
+      - recipe[lamp::default]
+    verifier:
+      inspec_tests:
+        - test/smoke/default
+    attributes:

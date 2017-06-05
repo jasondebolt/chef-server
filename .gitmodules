@@ -1,0 +1,30 @@
+[submodule "chef-centos7-jenkins"]
+	path = cookbooks/chef-centos7-jenkins
+	url = https://github.com/jasondebolt/chef-centos7-jenkins
+[submodule "chef-centos7-httpd"]
+	path = cookbooks/chef-centos7-httpd
+	url = https://github.com/jasondebolt/chef-centos7-httpd
+[submodule "chef-centos7-workstation"]
+	path = cookbooks/chef-centos7-workstation
+	url = https://github.com/jasondebolt/chef-centos7-workstation
+[submodule "chef-centos7-httpd-demo"]
+	path = cookbooks/chef-centos7-httpd-demo
+	url = https://github.com/jasondebolt/chef-centos7-httpd-demo
+[submodule "chef-centos7-haproxy"]
+	path = cookbooks/chef-centos7-haproxy
+	url = https://github.com/jasondebolt/chef-centos7-haproxy
+[submodule "chef-centos7-common"]
+	path = cookbooks/chef-centos7-common
+	url = https://github.com/jasondebolt/chef-centos7-common
+[submodule "chef-centos7-chef-client"]
+	path = cookbooks/chef-centos7-chef-client
+	url = https://github.com/jasondebolt/chef-centos7-chef-client
+[submodule "chef-lamp"]
+	path = cookbooks/chef-lamp
+	url = https://github.com/jasondebolt/chef-lamp
+[submodule "roles"]
+	path = cookbooks/roles
+	url = https://github.com/jasondebolt/chef-roles
+[submodule "data_bags"]
+	path = cookbooks/data_bags
+	url = https://github.com/jasondebolt/chef-data-bags
